@@ -10,92 +10,180 @@
 </head>
 
 <body>
-    
-        <header id="bg_head">
-            <div id="head">
-                <!-- 上层 -->
-                <div id="nav_left"></div>
-                <div id="nav_center">
-                    <select name="" id="search-alias">全部分类
-                        <option selected="selected" value="search-alias=aps">全部分类</option>
-                        <option value="search-alias=amazon-devices">亚马逊设备</option>
-                        <option value="search-alias=digital-text">Kindle商店</option>
-                        <option value="search-alias=mobile-apps">应用程序和游戏</option>
-                        <option value="search-alias=amazon-global-store">亚马逊海外购</option>
-                        <option value="search-alias=stripbooks">图书</option>
-                        <option value="search-alias=music">音乐</option>
-                        <option value="search-alias=videogames">游戏/娱乐</option>
-                        <option value="search-alias=video">音像</option>
-                        <option value="search-alias=software">软件</option>
-                        <option value="search-alias=audio-visual-education">教育音像</option>
-                        <option value="search-alias=communications">手机/通讯</option>
-                        <option value="search-alias=photo-video">摄影/摄像</option>
-                        <option value="search-alias=electronics">电子</option>
-                        <option value="search-alias=music-players">数码影音</option>
-                        <option value="search-alias=computers">电脑/IT</option>
-                        <option value="search-alias=office-products">办公用品</option>
-                        <option value="search-alias=home-appliances">小家电</option>
-                        <option value="search-alias=appliances"> 大家电 </option>
-                        <option value="search-alias=audio-visual"> 电视/音响 </option>
-                        <option value="search-alias=home">家用</option>
-                        <option value="search-alias=home-substore">家居</option>
-                        <option value="search-alias=kitchen">厨具</option>
-                        <option value="search-alias=home-improvement">家居装修</option>
-                        <option value="search-alias=pets">宠物用品</option>
-                        <option value="search-alias=grocery">食品</option>
-                        <option value="search-alias=wine">酒</option>
-                        <option value="search-alias=beauty">美容化妆</option>
-                        <option value="search-alias=hpc">个护健康</option>
-                        <option value="search-alias=baby">母婴用品</option>
-                        <option value="search-alias=toys-and-games">玩具</option>
-                        <option value="search-alias=sporting">运动户外休闲</option>
-                        <option value="search-alias=apparel">服饰箱包</option>
-                        <option value="search-alias=shoes">鞋靴</option>
-                        <option value="search-alias=watches">钟表</option>
-                        <option value="search-alias=jewelry">珠宝首饰</option>
-                        <option value="search-alias=automotive">汽车用品</option>
-                        <option value="search-alias=mi">乐器</option>
-                        <option value="search-alias=gift-cards">礼品卡</option>
-                        <option value="search-alias=luxury-beauty">LuxuryBeauty高端美妆店</option>
-                        <option value="search-alias=warehouse-deals">Z实惠</option>
-                    </select>
-                    <input type="text" id="head_input">
-                    <button id="head_button"></button>
-                </div>
-                <div id="nav_right"></div>
-                <!-- 下层 -->
-                <div id="nav_shop">
-                    <span id="line_1">浏览</span>
-                    <span id="line_2">全部商品分类</span>
-                    <div id="nav_a">
-                        <a href="">的亚马逊</a>
-                        <a href="">海外购</a>
-                        <a href="">Kindle电子书</a>
-                        <a href="">镇店之宝</a>
-                        <a href="">全球开店</a>
-                        <a href="">帮助</a>
-                        <a href="">In English</a>
-                    </div>
-                </div>
 
-
-
-
-                <div id="tools">
-                    <span id="tools_line1">您好</span>
-                    <span id="tools_line2">免费试享</span>
-                    <span id="tools_line3">我的账户</span>
-                    <span id="tools_line4">prime</span>
-                    <span id="tools_line5">购物车</span>
-                    <span id="tools_line6">心愿单</span>
+    <header id="bg_head">
+        <div id="head">
+            <!-- 上层 -->
+            <div id="nav_left"></div>
+            <div id="nav_center">
+                <select name="" id="search-alias">全部分类
+                    <option selected="selected" value="search-alias=aps">全部分类</option>
+                    <option value="search-alias=amazon-devices">亚马逊设备</option>
+                    <option value="search-alias=digital-text">Kindle商店</option>
+                    <option value="search-alias=mobile-apps">应用程序和游戏</option>
+                    <option value="search-alias=amazon-global-store">亚马逊海外购</option>
+                    <option value="search-alias=stripbooks">图书</option>
+                    <option value="search-alias=music">音乐</option>
+                    <option value="search-alias=videogames">游戏/娱乐</option>
+                    <option value="search-alias=video">音像</option>
+                    <option value="search-alias=software">软件</option>
+                    <option value="search-alias=audio-visual-education">教育音像</option>
+                    <option value="search-alias=communications">手机/通讯</option>
+                    <option value="search-alias=photo-video">摄影/摄像</option>
+                    <option value="search-alias=electronics">电子</option>
+                    <option value="search-alias=music-players">数码影音</option>
+                    <option value="search-alias=computers">电脑/IT</option>
+                    <option value="search-alias=office-products">办公用品</option>
+                    <option value="search-alias=home-appliances">小家电</option>
+                    <option value="search-alias=appliances"> 大家电 </option>
+                    <option value="search-alias=audio-visual"> 电视/音响 </option>
+                    <option value="search-alias=home">家用</option>
+                    <option value="search-alias=home-substore">家居</option>
+                    <option value="search-alias=kitchen">厨具</option>
+                    <option value="search-alias=home-improvement">家居装修</option>
+                    <option value="search-alias=pets">宠物用品</option>
+                    <option value="search-alias=grocery">食品</option>
+                    <option value="search-alias=wine">酒</option>
+                    <option value="search-alias=beauty">美容化妆</option>
+                    <option value="search-alias=hpc">个护健康</option>
+                    <option value="search-alias=baby">母婴用品</option>
+                    <option value="search-alias=toys-and-games">玩具</option>
+                    <option value="search-alias=sporting">运动户外休闲</option>
+                    <option value="search-alias=apparel">服饰箱包</option>
+                    <option value="search-alias=shoes">鞋靴</option>
+                    <option value="search-alias=watches">钟表</option>
+                    <option value="search-alias=jewelry">珠宝首饰</option>
+                    <option value="search-alias=automotive">汽车用品</option>
+                    <option value="search-alias=mi">乐器</option>
+                    <option value="search-alias=gift-cards">礼品卡</option>
+                    <option value="search-alias=luxury-beauty">LuxuryBeauty高端美妆店</option>
+                    <option value="search-alias=warehouse-deals">Z实惠</option>
+                </select>
+                <input type="text" id="head_input">
+                <button id="head_button"></button>
+            </div>
+            <div id="nav_right"></div>
+            <!-- 下层 -->
+            <div id="nav_shop">
+                <span id="line_1">浏览</span>
+                <span id="line_2">全部商品分类</span>
+                <div id="nav_a">
+                    <a href="">的亚马逊</a>
+                    <a href="">海外购</a>
+                    <a href="">Kindle电子书</a>
+                    <a href="">镇店之宝</a>
+                    <a href="">全球开店</a>
+                    <a href="">帮助</a>
+                    <a href="">In English</a>
                 </div>
             </div>
-        </header>
-        <div id="bg_page_content">
-            <div id="page_content"> </div>
-        </div>
-   
 
+
+
+
+            <div id="tools">
+                <span id="tools_line1">您好</span>
+                <span id="tools_line2">免费试享</span>
+                <span id="tools_line3">我的账户</span>
+                <span id="tools_line4">prime</span>
+                <span id="tools_line5">购物车</span>
+                <span id="tools_line6">心愿单</span>
+            </div>
+        </div>
+    </header>
+    <div id="bg_page_content">
+        <div id="page_content"> </div>
+    </div>
+    <!-- 头部 -->
+
+    <div id="bg_content">
+        <div id="content"></div>
+    </div>
+
+    <!-- 尾部 -->
+    <div id="bg_Tail">
+        <div id="Tail">
+            <div id="Tail_head">
+                <div>&nbsp&nbsp了解我们
+                    <ul>
+                        <li><a href="">人才招聘 </a></li>
+                        <li><a href="">关于亚马逊</a></li>
+                        <li><a href="">新闻中心</a></li>
+                        <li><a href="">公益社区</a></li>
+                        <li><a href="">移动客户端</a></li>
+                        <li><a href="">风险监测</a></li>
+                    </ul>
+                </div>
+                <div> &nbsp&nbsp合作信息
+                    <ul>
+                        <li><a href="">全球开店</a></li>
+                        <li><a href="">加入联盟</a></li>
+                        <li><a href="">我要推广</a></li>
+                        <li><a href="">合作伙伴</a></li>
+                    </ul>
+                </div>
+                <div> &nbsp&nbsp支付方式
+                    <ul>
+                        <li><a href="">亚马逊支付</a></li>
+                        <li><a href="">亚马逊账户</a></li>
+                        <li><a href="">重要安全提示</a></li>
+                        <li><a href="">支付宝与微信支付</a></li>
+                        <li><a href=""> 亚马逊Prime联名卡[New]</a></li>
+                    </ul>
+                </div>
+                <div> &nbsp&nbsp帮助中心和购物指南
+                    <ul>
+                        <li><a href="">订单查询</a></li>
+                        <li><a href="">配送费收取标准</a></li>
+                        <li><a href="">在线自助退换货</a></li>
+                        <li><a href="">退换货及退款</a></li>
+                        <li><a href="">亚马逊助手</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">更多品牌产品</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Tail_img"></div>
+            <div class="Tail_line1">
+                <ul>
+                    <li class="tail_line_first"><a href="">美国/地区</a></li>
+                    <li><a href="">加拿大</a></li>
+                    <li><a href="">巴西</a></li>
+                    <li><a href="">墨西哥</a></li>
+                    <li><a href="">英国/地区</a></li>
+                    <li><a href="">法国/地区</a></li>
+                    <li><a href="">德国/地区</a></li>
+                    <li><a href="">西班牙</a></li>
+                    <li><a href="">意大利</a></li>
+                    <li><a href="">荷兰地区</a></li>
+                    <li><a href="">日本</a></li>
+                    <li><a href="">印度</a></li>
+                    <li><a href="">澳大利亚</a></li>
+                    <li><a href="">土耳其</a></li>
+                </ul>
+                <span>亚马逊家族网站:</span>
+                <ul>
+                    <li class="tail_line_first"><a href="">Amazon Web Services</a></li>
+                    <li><a href="">Shopbop</a></li>
+                    <li><a href="">亚马逊全球物流</a></li>
+                </ul>
+                <span>YAMAXUN™</span>
+            </div>
+            <div class="Tail_line1">
+                <ul>
+                    <li class="tail_line_first"><a href="">使用条件</a></li>
+                    <li><a href="">隐私条款</a></li>
+                    <li><a href="">基于兴趣的广告</a></li>
+                </ul>
+                <span>版权所有 © 1996-2019，亚马逊公司或其关联公司</span>
+            </div>
+            <div class="Tail_line2"></div>
+            <div class="Tail_line2"></div>
+            <div class="Tail_line2"></div>
+
+        </div>
+    </div>
 </body>
 
 </html>

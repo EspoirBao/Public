@@ -16,6 +16,7 @@
     a:hover{	/*悬浮状态*/
         color:orange;text-decoration: underline;
     }
+    box-sizing: border-box;
 }
 #bg_head{
     height: 100px;
@@ -155,7 +156,83 @@
 }// 头部——————————————————————————————————————————-
 
 
+// 内容--------------------------------------------
+#bg_content{
+    height: 500px;
+    background: orange;
 
+}
+
+
+// 尾部----------------------------------------------
+
+#bg_Tail{
+    width: 100%;
+    height: 400px;
+    background: skyblue;
+    margin: 0 auto;
+    #Tail{
+        width: 1500px;
+        height: 400px;
+        margin: 0 auto;
+        background: pink;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #Tail_head{
+        height: 200px;
+        width: 700px;
+        margin: 30px auto 0;
+        display: flex;
+      
+        div{
+            flex: 1;
+            text-align: left;
+        }
+    }
+
+    .Tail_img{
+        width: 100%;
+        height: 19px;
+        background: orange;
+    }
+
+    .Tail_line1{
+            width: 100%;
+            text-align: center;
+            
+            ul{
+                display: inline-block;
+                .tail_line_first>a{
+                    border: none;
+                }
+            }
+            ul li{
+                display: inline-block;
+                line-height: 18px;
+                a{
+                    border-left: 1px solid #5e5766;
+                    margin: 0;
+                    padding: 0 5px 0;
+                }
+               
+            }
+            
+            span{
+                 color: #767676;
+                 font-size: 11px;
+                 text-align: center;
+                 line-height: 18px;
+            }
+            
+    }
+
+
+
+
+
+}
 
 
 
