@@ -35,7 +35,7 @@
     left: 0;
 }
 #nav_center{
-    height: 35px;
+    height: 37px;
     width: 900px;
     position: absolute;
     left:200px;
@@ -53,7 +53,7 @@
     }
 
     #head_input{
-        height: 33px;
+        height: 31px;
         border: none;
         width: 600px;
         outline: none;
@@ -67,6 +67,7 @@
         border: none;
         background: #5e5766;
         outline: none;
+        color: #fff;
     }
 
 }
@@ -228,6 +229,32 @@
             
     }
 
+    .Tail_line2{
+        width: 100%;
+        text-align: center;
+        ul{
+            display: inline-block;
+            .tail_line_first>a{
+               border: none;
+            }
+        }
+        ul li{
+            display: inline-block;
+            line-height: 18px;
+            a{
+                border-left: 1px solid black;
+                margin: 0;
+                padding: 0 5px 0;
+            }
+            
+        }
+        span{
+            color: black;
+            font-size: 11px;
+            text-align: center;
+            line-height: 18px;
+       }
+    }
 
 
 

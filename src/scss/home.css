@@ -49,7 +49,7 @@
 }
 
 #bg_head #head #nav_center {
-  height: 35px;
+  height: 37px;
   width: 900px;
   position: absolute;
   left: 200px;
@@ -67,7 +67,7 @@
 }
 
 #bg_head #head #nav_center #head_input {
-  height: 33px;
+  height: 31px;
   border: none;
   width: 600px;
   outline: none;
@@ -80,6 +80,7 @@
   border: none;
   background: #5e5766;
   outline: none;
+  color: #fff;
 }
 
 #bg_head #head #nav_right {
@@ -233,6 +234,37 @@
 
 #bg_Tail .Tail_line1 span {
   color: #767676;
+  font-size: 11px;
+  text-align: center;
+  line-height: 18px;
+}
+
+#bg_Tail .Tail_line2 {
+  width: 100%;
+  text-align: center;
+}
+
+#bg_Tail .Tail_line2 ul {
+  display: inline-block;
+}
+
+#bg_Tail .Tail_line2 ul .tail_line_first > a {
+  border: none;
+}
+
+#bg_Tail .Tail_line2 ul li {
+  display: inline-block;
+  line-height: 18px;
+}
+
+#bg_Tail .Tail_line2 ul li a {
+  border-left: 1px solid black;
+  margin: 0;
+  padding: 0 5px 0;
+}
+
+#bg_Tail .Tail_line2 span {
+  color: black;
   font-size: 11px;
   text-align: center;
   line-height: 18px;
