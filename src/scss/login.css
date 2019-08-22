@@ -106,4 +106,31 @@
   font-size: 12px;
   margin-top: 20px;
 }
+
+#bg_tail {
+  height: 60px;
+  width: 100%;
+}
+
+#bg_tail #tail {
+  height: 60px;
+  width: 400px;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+#bg_tail #tail #tail_ul {
+  display: inline-block;
+}
+
+#bg_tail #tail #tail_ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 5px 0;
+}
+
+#bg_tail #tail #tail_bottom {
+  font-size: 12px;
+  margin-top: 10px;
+}
 /*# sourceMappingURL=login.css.map */

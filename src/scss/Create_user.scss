@@ -66,6 +66,9 @@
         #user_pwd{
             @extend #input;
         }
+        #user_pwd_check{
+            @extend #input;
+        }
 
         #createAccount{
             
@@ -75,10 +78,40 @@
             margin-top: 20px;
         }
 
-        #legalTextRow{
-            font-size: 12px;
+        #legalTextRow_check{
+          height: 10px;
+        
         }
 
-        
+
+        #legalTextRow_span{
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+
+    }
+}
+#bg_tail{
+    height: 60px;
+    width: 100%;
+  
+    #tail{
+        height: 60px;
+        width: 400px;
+        margin: 10px auto 0;
+        text-align: center;
+        #tail_ul{
+            display: inline-block;
+            li{
+                display: inline-block;
+                text-align: center;
+                padding: 0 5px 0;
+            }
+        }
+        #tail_bottom{
+            font-size: 12px;
+            margin-top: 10px;
+        }
     }
 }

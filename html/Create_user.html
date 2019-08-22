@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Amazon 注册</title>
     <link rel="stylesheet" href="../src/scss/Create_user.css">
+    <link rel="stylesheet" href="../src/layui/css/layui.css">
 </head>
+
 <body>
-        <div id="bg_head">
-                <div id="head"></div>
+    <div id="bg_head">
+        <div id="head"></div>
+    </div>
+    <div id="bg_content">
+        <div id="content">
+            <h1>创建账户</h1>
+            <span class="content_span">您的姓名</span>
+            <input type="text" id="user_name">
+
+            <span class="content_span">手机号码</span>
+            <input type="text" id="user_phone">
+
+            <span class="content_span">电子邮箱地址(可选)</span>
+            <input type="text" id="user_mail">
+
+            <span class="content_span">密码</span>
+            <input type="password" id="user_pwd" placeholder="至少6个字符">
+
+            <span class="content_span">确认密码</span>
+            <input type="passwprd" id="user_pwd_check">
+
+            <button id="createAccount">注册</button>
+            <div id="legalTextRow">
+                <input type="checkbox" id="legalTextRow_check">
+                <span id="legalTextRow_span">我已阅读<a href="">使用条件</a>及<a href="">隐私声明</a></span>
             </div>
-            <div id="bg_content">
-                <div id="content">
-                    <h1>创建账户</h1>
-                    <span class="content_span">您的姓名</span>
-                    <input type="text" id="user_name">
-
-                    <span class="content_span">手机号码</span>
-                    <input type="text" id="user_phone">
-
-                    <span class="content_span">电子邮箱地址(可选)</span>
-                    <input type="text" id="user_mail">
-                   
-                    <span class="content_span">密码</span>
-                    <input type="password" id="user_pwd">
-
-                   
-
-                    <button id="createAccount">注册</button>
-                    <span id="legalTextRow">注册即表示您同意网站的<a href="">使用条件</a>及<a href="">隐私声明</a></span>
-                </div>
+        </div>
+    </div>
+    <div id="bg_tail">
+        <div id="tail">
+            <div id="tail_top">
+                <ul id="tail_ul">
+                    <li><a href="">使用条件</a></li>
+                    <li><a href="">隐私声明</a></li>
+                    <li><a href="">帮助</a></li>
+                </ul>
             </div>
-            <div id="bg_tail">
-                <div id="tail"></div>
-            </div>
+            <div id="tail_bottom">版权所有 © 1996-2019，亚马逊公司或其关联公司</div>
+        </div>
+    </div>
 </body>
+<script src="../src/js/JQ/jquery-1.11.3.js"></script>
+<script src="../src/layer/layer.js"></script>
+<script src="layer.js"></script>
+<script src="../src/js/Create_user.js"></script>
+
+
 </html>

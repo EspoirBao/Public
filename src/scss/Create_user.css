@@ -28,7 +28,7 @@
   text-decoration: underline;
 }
 
-#input, #bg_content #content #user_name, #bg_content #content #user_phone, #bg_content #content #user_mail, #bg_content #content #user_pwd, #bg_content #content #createAccount {
+#input, #bg_content #content #user_name, #bg_content #content #user_phone, #bg_content #content #user_mail, #bg_content #content #user_pwd, #bg_content #content #user_pwd_check, #bg_content #content #createAccount {
   height: 40px;
   width: 300px;
 }
@@ -78,7 +78,39 @@
   margin-top: 20px;
 }
 
-#bg_content #content #legalTextRow {
+#bg_content #content #legalTextRow_check {
+  height: 10px;
+}
+
+#bg_content #content #legalTextRow_span {
   font-size: 12px;
+  line-height: 18px;
+}
+
+#bg_tail {
+  height: 60px;
+  width: 100%;
+}
+
+#bg_tail #tail {
+  height: 60px;
+  width: 400px;
+  margin: 10px auto 0;
+  text-align: center;
+}
+
+#bg_tail #tail #tail_ul {
+  display: inline-block;
+}
+
+#bg_tail #tail #tail_ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 5px 0;
+}
+
+#bg_tail #tail #tail_bottom {
+  font-size: 12px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=Create_user.css.map */

@@ -98,3 +98,29 @@
     }
 
 }
+
+#bg_tail{
+    height: 60px;
+    width: 100%;
+  
+    #tail{
+        height: 60px;
+        width: 400px;
+        margin: 10px auto 0;
+        text-align: center;
+        #tail_ul{
+            display: inline-block;
+            li{
+                display: inline-block;
+                text-align: center;
+                padding: 0 5px 0;
+            }
+        }
+        #tail_bottom{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
