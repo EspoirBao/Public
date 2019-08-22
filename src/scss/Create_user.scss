@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    a {
+        font-size: 12px;
+    }
+    
+    a:link{		/*默认状态*/
+        color: blue;text-decoration:none;
+    }
+    a:visited{	/*浏览过的*/
+        color:blue;
+    }
+    a:hover{	/*悬浮状态*/
+        color:orange;text-decoration: underline;
+    }
+    box-sizing: border-box;
+
+}
+#input{
+    height: 40px;
+    width: 300px;
+}
+#bg_head{
+    height: 40px;
+    width: 100%;
+    #head{
+        height: 40px;
+        width: 90px;
+        background: orange;
+        margin: 0 auto;
+    }
+}
+#bg_content{
+    height: 600px;
+    width: 100%;
+    #content{
+        height: 600px;
+        width: 350px;
+        margin: 10px auto 0;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+
+        h1{
+            font-weight: 400;
+        }
+
+        .content_span{
+            display: flex;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        #user_name{
+            @extend #input;
+        }
+        #user_phone{
+            @extend #input;
+        }
+        #user_mail{
+            @extend #input;
+        }
+        #user_pwd{
+            @extend #input;
+        }
+
+        #createAccount{
+            
+            @extend #input;
+            text-align: center;
+            line-height: 40px;
+            margin-top: 20px;
+        }
+
+        #legalTextRow{
+            font-size: 12px;
+        }
+
+        
+    }
+}

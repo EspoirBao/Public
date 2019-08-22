@@ -55,7 +55,7 @@
     #head_input{
         height: 31px;
         border: none;
-        width: 600px;
+        width: 700px;
         outline: none;
        
     }
@@ -119,6 +119,18 @@
     top: 50px;
     right: 0;
     background: cyan;
+    display: flex;
+
+    .tools_box{
+        height: 70px;
+        width: 95px;
+        flex: 1;
+    }
+
+
+
+
+
     #tools_line1{
         font-size: 12px;
          position: absolute;
@@ -160,7 +172,7 @@
          background: pink;
          position: absolute;
          left: 0;
-         top: 70px;
+         top: 50px;
          display: none;
          #tools_message_triangle{
              height: 0;
@@ -283,6 +295,7 @@
             text-align: center;
             line-height: 18px;
        }
+       
     }
 
 

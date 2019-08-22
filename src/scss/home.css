@@ -69,7 +69,7 @@
 #bg_head #head #nav_center #head_input {
   height: 31px;
   border: none;
-  width: 600px;
+  width: 700px;
   outline: none;
 }
 
@@ -125,6 +125,17 @@
   top: 50px;
   right: 0;
   background: cyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#bg_head #tools .tools_box {
+  height: 70px;
+  width: 95px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 #bg_head #tools #tools_line1 {
@@ -171,7 +182,7 @@
   background: pink;
   position: absolute;
   left: 0;
-  top: 70px;
+  top: 50px;
   display: none;
 }
 
