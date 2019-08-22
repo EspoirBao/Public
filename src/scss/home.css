@@ -1,21 +1,164 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
+
+* a {
+  font-size: 12px;
+  margin-left: 15px;
+}
+
+* a:link {
+  /*默认状态*/
+  color: blue;
+  text-decoration: none;
+}
+
+* a:visited {
+  /*浏览过的*/
+  color: blue;
+}
+
+* a:hover {
+  /*悬浮状态*/
+  color: orange;
+  text-decoration: underline;
+}
 
 #bg_head {
   height: 100px;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+}
 
-#head {
+#bg_head #head {
   height: 100px;
-  width: 100%; }
+  width: 100%;
+}
 
-.sjx {
-  height: 0;
-  width: 0;
-  border: 9px solid transparent;
-  border-bottom-color: black;
-  border-color: transparent; }
+#bg_head #head #nav_left {
+  height: 50px;
+  width: 200px;
+  background: cyan;
+  position: absolute;
+  left: 0;
+}
 
+#bg_head #head #nav_center {
+  height: 35px;
+  width: 900px;
+  position: absolute;
+  left: 200px;
+  border: 1px solid black;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#bg_head #head #nav_center #search-alias {
+  height: 35px;
+  border: none;
+  width: 100px;
+  border-right: 1px solid black;
+  outline: none;
+}
+
+#bg_head #head #nav_center #head_input {
+  height: 33px;
+  border: none;
+  width: 600px;
+  outline: none;
+}
+
+#bg_head #head #nav_center #head_button {
+  height: 35px;
+  width: 90px;
+  float: right;
+  border: none;
+  background: #5e5766;
+  outline: none;
+}
+
+#bg_head #head #nav_right {
+  height: 50px;
+  width: 400px;
+  position: absolute;
+  right: 0;
+  background: red;
+}
+
+#bg_head #nav_shop {
+  height: 70px;
+  width: 1100px;
+  position: absolute;
+  top: 50px;
+  background: skyblue;
+}
+
+#bg_head #nav_shop #line_1 {
+  position: absolute;
+  top: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+#bg_head #nav_shop #line_2 {
+  position: absolute;
+  top: 32px;
+  margin-left: 10px;
+}
+
+#bg_head #nav_shop #nav_a {
+  position: absolute;
+  top: 32px;
+  left: 180px;
+}
+
+#bg_head #tools {
+  height: 70px;
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: cyan;
+}
+
+#bg_head #tools #tools_line1 {
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  left: 20px;
+}
+
+#bg_head #tools #tools_line2 {
+  font-size: 12px;
+  position: absolute;
+  top: 8px;
+  left: 120px;
+}
+
+#bg_head #tools #tools_line3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#bg_head #tools #tools_line4 {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+#bg_head #tools #tools_line5 {
+  position: absolute;
+  top: 20px;
+  left: 220px;
+}
+
+#bg_head #tools #tools_line6 {
+  position: absolute;
+  top: 20px;
+  left: 320px;
+}
 /*# sourceMappingURL=home.css.map */
