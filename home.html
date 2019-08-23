@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>亚马逊-网上购物商城：要网购, 就来Z.cn!</title>
     <link rel="stylesheet" href="./src/scss/home.css">
+    <link rel="stylesheet" href="./src/layui/css/layui.css">
 </head>
 
 <body>
@@ -91,19 +92,33 @@
                         <li> <a href="">美妆</a> /<a href="">个护健康</a> </li>
                         <li><a href="">厨具</a> /<a href=""> 家居</a></li>
                         <li><a href="">玩具</a> /<a href="">母婴</a> </li>
-                        <li><a href="">电脑</a> /<a href="">办公</a>  /<a href="">文具</a> </li>
+                        <li><a href="">电脑</a> /<a href="">办公</a> /<a href="">文具</a> </li>
                         <li><a href="">运动户外</a></li>
-                        <li><a href="">手机</a> /<a href="">摄影</a>  /<a href="">数码</a> </li>
+                        <li><a href="">手机</a> /<a href="">摄影</a> /<a href="">数码</a> </li>
                         <li><a href="">电子配件</a> /<a href="">智能生活</a> </li>
                         <li><a href="">食品</a> /<a href="">营养品</a> </li>
                         <li><a href="">家电</a> /<a href="">家装</a> </li>
-                        <li><a href="">游戏</a> /<a href="">娱乐</a>  /<a href="">乐器</a> </li>
+                        <li><a href="">游戏</a> /<a href="">娱乐</a> /<a href="">乐器</a> </li>
                         <li><a href="">钟表</a> /<a href="">首饰</a> </li>
                     </ul>
                     <hr>
                     <p><a href="">全部商品分类</a></p>
-                    <div>
-                        
+                    <div id="nav_subcats">
+                        <a href="" id="nav_subccats_big">Kindle电子书阅读器</a>
+                        <div id="nav_subcats_top">
+                            <div id="subcats_top_div1"><a href="">Kindle设备</a></div>
+                            <div id="subcats_top_div2">
+                                <span><a href="">Kindle</a><a href="">Kindle Paperwhite </a><a href="">Kindle Oasis
+                                    </a></span>
+                                <span><a href="">Kindle入门版(2016款)认证翻新机</a></span>
+                                <span><a href=""> Kindle Paperwhite（2015款）认证翻新机</a></span>
+                            </div>
+                        </div>
+                        <div id="nav_subcats_bottom">
+                            <div id="subcats_bottom_div">Kindle帮助</div>
+                            <span><a href="">常见问题</a><a href="">帮助视频</a></span>
+                        </div>
+                        <img src="./img/content_new.png" alt="">
                     </div>
                 </div>
 
@@ -170,7 +185,15 @@
     <!-- 头部 -->
 
     <div id="bg_content">
-        <div id="content"></div>
+                <div class="layui-carousel" id="test1">
+                        <div carousel-item>
+                          <div><img src="./img/lb1.jpg" alt=""></div>
+                          <div><img src="./img/lb2.jpg" alt=""></div>
+                          <div><img src="./img/lb3.jpg" alt=""></div>
+                          <div><img src="./img/lb4.jpg" alt=""></div>
+                          <div><img src="./img/lb5.jpg" alt=""></div>
+                        </div>
+                      </div>
     </div>
 
     <!-- 尾部 -->
@@ -254,7 +277,7 @@
             <div class="Tail_line2">
                 <ul>
 
-                    <li class="tail_line_first"><a href=""><img src="./img/pc_gw.png" >京公网安备 11010502030232号</a></li>
+                    <li class="tail_line_first"><a href=""><img src="./img/pc_gw.png">京公网安备 11010502030232号</a></li>
                     <li><a href="">增值电信业务经营许可证：合字B2-20090004</a></li>
                 </ul>
             </div>
@@ -278,5 +301,19 @@
 <script src="./src/js/JQ/jquery-1.11.3.js"></script>
 <script src="./src/js/cookie.js"></script>
 <script src="./src/js/home.js"></script>
+<script src="./src/layui/layui.js"></script>
+<script>
+layui.use('carousel', function(){
+  var carousel = layui.carousel;
+  //建造实例
+  carousel.render({
+    elem: '#test1'
+    ,width: '100%' //设置容器宽度
+    ,arrow: 'always' //始终显示箭头
+    ,anim:'fade'
+    //,anim: 'updown' //切换动画方式
+  });
+});
+</script>
 
 </html>

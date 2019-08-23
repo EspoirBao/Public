@@ -29,18 +29,18 @@
   text-decoration: underline;
 }
 
-#a_style1 a:link, #bg_head #nav_shop #nav_content li a:link, #bg_head #nav_shop #nav_content p a:link, #bg_head #tools #tools_message a:link {
+#a_style1 a:link, #bg_head #nav_shop #nav_content li a:link, #bg_head #nav_shop #nav_content p a:link, #bg_head #nav_shop #nav_content #nav_subcats #nav_subcats_top #subcats_top_div2 span a a:link, #bg_head #tools #tools_message a:link {
   /*默认状态*/
   color: black;
   text-decoration: none;
 }
 
-#a_style1 a:visited, #bg_head #nav_shop #nav_content li a:visited, #bg_head #nav_shop #nav_content p a:visited, #bg_head #tools #tools_message a:visited {
+#a_style1 a:visited, #bg_head #nav_shop #nav_content li a:visited, #bg_head #nav_shop #nav_content p a:visited, #bg_head #nav_shop #nav_content #nav_subcats #nav_subcats_top #subcats_top_div2 span a a:visited, #bg_head #tools #tools_message a:visited {
   /*浏览过的*/
   color: black;
 }
 
-#a_style1 a:hover, #bg_head #nav_shop #nav_content li a:hover, #bg_head #nav_shop #nav_content p a:hover, #bg_head #tools #tools_message a:hover {
+#a_style1 a:hover, #bg_head #nav_shop #nav_content li a:hover, #bg_head #nav_shop #nav_content p a:hover, #bg_head #nav_shop #nav_content #nav_subcats #nav_subcats_top #subcats_top_div2 span a a:hover, #bg_head #tools #tools_message a:hover {
   /*悬浮状态*/
   color: orange;
   text-decoration: underline;
@@ -129,8 +129,12 @@
 #bg_head #nav_shop #nav_content {
   width: 160px;
   background: #FFF;
+  display: none;
   border: 1px solid #BBBBBB;
   border-radius: 5px;
+  position: absolute;
+  left: 15px;
+  z-index: 10;
 }
 
 #bg_head #nav_shop #nav_content #nav_shadow {
@@ -139,8 +143,8 @@
   border: 9px solid transparent;
   border-bottom-color: #BBBBBB;
   position: absolute;
-  left: 115px;
-  top: 33px;
+  left: 100px;
+  top: -19px;
 }
 
 #bg_head #nav_shop #nav_content li {
@@ -155,6 +159,71 @@
 #bg_head #nav_shop #nav_content p {
   height: 30px;
   line-height: 30px;
+}
+
+#bg_head #nav_shop #nav_content #nav_subcats {
+  height: 363px;
+  width: 420px;
+  background: #FFF;
+  position: absolute;
+  top: -1px;
+  left: 155px;
+  border: 1px solid #bbbbbb;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+#bg_head #nav_shop #nav_content #nav_subcats img {
+  position: absolute;
+  bottom: 0px;
+  height: 198px;
+  width: 100%;
+}
+
+#bg_head #nav_shop #nav_content #nav_subcats #nav_subccats_big {
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 15px;
+  color: #e47911;
+  font-size: 20px;
+  margin: 10px 5px 10px;
+}
+
+#bg_head #nav_shop #nav_content #nav_subcats #nav_subcats_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#bg_head #nav_shop #nav_content #nav_subcats #nav_subcats_top #subcats_top_div1 a {
+  color: #e47911;
+  font-size: 14px;
+}
+
+#bg_head #nav_shop #nav_content #nav_subcats #nav_subcats_top #subcats_top_div2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#bg_head #nav_shop #nav_content #nav_subcats #nav_subcats_bottom #subcats_bottom_div {
+  margin-top: 15px;
+  margin-left: 15px;
+  color: #e47911;
+  font-size: 14px;
+}
+
+#bg_head #nav_shop #nav_content #nav_subcats #nav_subcats_bottom span {
+  margin-left: 86px;
 }
 
 #bg_head #nav_shop #nav_line_box {
@@ -251,6 +320,7 @@
   border: 1px solid #BBBBBB;
   border-radius: 3px;
   display: none;
+  z-index: 10;
 }
 
 #bg_head #tools #tools_message #tools_message_triangle {
@@ -281,6 +351,12 @@
 #bg_content {
   height: 500px;
   background: orange;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#bg_content img {
+  width: 100%;
 }
 
 #bg_Tail {

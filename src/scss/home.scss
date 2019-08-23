@@ -115,17 +115,20 @@ a:hover{	/*悬浮状态*/
     #nav_content{
         width: 160px;
         background:#FFF;
-        // display: none;
+        display: none;
         border: 1px solid #BBBBBB;
         border-radius: 5px;
+        position: absolute;
+        left: 15px;
+        z-index: 10;
         #nav_shadow{
             height: 0;
             width: 0;
             border: 9px solid transparent;
             border-bottom-color: #BBBBBB;
             position: absolute;
-            left: 115px;
-            top: 33px;
+            left: 100px;
+            top: -19px;
         }
 
         li{
@@ -141,6 +144,74 @@ a:hover{	/*悬浮状态*/
             line-height: 30px;
             @extend #a_style1;
         }
+
+        #nav_subcats{
+            height: 363px;
+            width: 420px;
+            background:#FFF;
+            position: absolute;
+            top: -1px;
+            left: 155px;
+            border: 1px solid #bbbbbb;
+            border-top-right-radius:5px;
+            border-bottom-right-radius:5px;
+            display: none;
+            
+
+                img{
+                    position: absolute;
+                    bottom: 0px;
+                    height: 198px;
+                    width: 100%;
+                }
+                #nav_subccats_big{
+                    display: inline-block;
+                    margin-top: 15px;
+                    margin-left: 15px;
+                    color: #e47911;
+                    font-size: 20px;
+                    margin: 10px 5px 10px;
+                }
+            
+                #nav_subcats_top{
+                    display: flex;
+                    flex-wrap:wrap;
+                    
+                    #subcats_top_div1{
+                        a{
+                            color: #e47911;
+                            font-size: 14px;
+                        }
+                    }
+
+
+                    #subcats_top_div2{
+                        display: flex;
+                    flex-wrap:wrap;
+                    flex-direction:column;
+                       span a{
+                            @extend #a_style1;
+                        }
+                    }
+                }
+
+                #nav_subcats_bottom{
+                    #subcats_bottom_div{
+                        margin-top: 15px;
+                        margin-left: 15px;
+                        color: #e47911;
+                        font-size: 14px;
+                      
+                    }
+                    span{
+                        margin-left: 86px;
+                    }
+                }
+        }
+
+
+
+
     }
 
 
@@ -244,6 +315,7 @@ a:hover{	/*悬浮状态*/
          border: 1px solid #BBBBBB;
          border-radius: 3px;
          display: none;
+         z-index: 10;
          #tools_message_triangle{
              height: 0;
              width: 0;
@@ -278,7 +350,11 @@ a:hover{	/*悬浮状态*/
 #bg_content{
     height: 500px;
     background: orange;
-
+    width: 100%;
+    margin: 0 auto;
+    img{
+        width: 100%;
+    }
 }
 
 

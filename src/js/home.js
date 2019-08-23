@@ -26,7 +26,18 @@ $(document).on('mouseover','#nav_content',function(){
         $('#nav_content').hide()
     })
 })
-
+$(document).on('mouseover','#nav_content_ul',function(){
+    $('#nav_subcats').show();
+    $(document).on('mouseleave','#nav_content_ul',function(){
+        $('#nav_subcats').hide()
+    })
+})
+$(document).on('mouseover','#nav_subcats',function(){
+    $('#nav_subcats').show();
+    $(document).on('mouseleave','#nav_subcats',function(){
+        $('#nav_subcats').hide();
+    })
+})
 // 鼠标移入功能——————————————————————————————————————————————————————————————
 
 
@@ -57,4 +68,11 @@ $(document).on('click','.Exit_account',function(){
 
 
 // 用户登陆判断——————————————————————————————————————————————————————
+
+// layui轮播图————————————————————————————————
+
+
+
+
+
 
