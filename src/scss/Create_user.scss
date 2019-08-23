@@ -1,22 +1,22 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     list-style: none;
     a {
         font-size: 12px;
+        
     }
     
     a:link{		/*默认状态*/
-        color: blue;text-decoration:none;
+        color: #0055AA;text-decoration:none;
     }
     a:visited{	/*浏览过的*/
-        color:blue;
+        color:#0055AA;
     }
     a:hover{	/*悬浮状态*/
         color:orange;text-decoration: underline;
     }
     box-sizing: border-box;
-
 }
 #input{
     height: 40px;
@@ -27,8 +27,9 @@
     width: 100%;
     #head{
         height: 40px;
-        width: 90px;
-        background: orange;
+        width: 100px;
+        background: url(../../img/global-sprite.png);
+        background-position-y: -118px;
         margin: 0 auto;
     }
 }
@@ -40,7 +41,7 @@
         width: 350px;
         margin: 10px auto 0;
         padding: 20px;
-        border: 1px solid black;
+        border: 1px solid #949494;
         border-radius: 5px;
 
         h1{
@@ -76,6 +77,11 @@
             text-align: center;
             line-height: 40px;
             margin-top: 20px;
+            border-color: #F0C14B;
+            border-radius: 3px;
+            outline: none;
+            background: -webkit-linear-gradient(top,#F8E1AB,#F3CF74,#F0C24E);
+
         }
 
         #legalTextRow_check{
@@ -112,6 +118,7 @@
         #tail_bottom{
             font-size: 12px;
             margin-top: 10px;
+            
         }
     }
 }

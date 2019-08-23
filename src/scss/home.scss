@@ -8,16 +8,28 @@
     }
     
     a:link{		/*默认状态*/
-        color: blue;text-decoration:none;
+        color: #0055AA;text-decoration:none;
     }
     a:visited{	/*浏览过的*/
-        color:blue;
+        color:#0055AA;
     }
     a:hover{	/*悬浮状态*/
         color:orange;text-decoration: underline;
     }
     box-sizing: border-box;
 }
+#a_style1{
+a:link{		/*默认状态*/
+    color: black;text-decoration:none;
+}
+a:visited{	/*浏览过的*/
+    color:black;
+}
+a:hover{	/*悬浮状态*/
+    color:orange;text-decoration: underline;
+}
+}
+
 #bg_head{
     height: 100px;
     width: 100%;
@@ -26,21 +38,34 @@
 #head{
     height: 100px;
     width: 100%;
+    background: -webkit-linear-gradient(top,white,white,#F0F0F0);
+    
 
 #nav_left{
     height: 50px;
     width: 200px;
-    background: cyan;
+    // background: cyan;
+    
     position: absolute;
     left: 0;
+    #nav_logo{
+        height: 40px;
+        width: 100px;
+        background: url(../../img/global-sprite.png);
+        background-position-y: -118px;
+        position: absolute;
+        left: 30px;
+        top: 10px;
+    }
 }
 #nav_center{
     height: 37px;
     width: 900px;
     position: absolute;
+    top: 5px;
     left:200px;
     border: 1px solid black;
-    margin-top: 5px;
+   
     border-radius: 5px;
 
     #search-alias{
@@ -49,7 +74,7 @@
         width: 100px;
         border-right: 1px solid black;
         outline: none;
-       
+        background: transparent;
     }
 
     #head_input{
@@ -73,10 +98,10 @@
 }
 #nav_right{
     height: 50px;
-    width: 400px;
+    width: 370px;
     position: absolute;
     right: 0;
-    background: red;
+    background: url(../../img/navright.jpg)no-repeat;
 }
 }
 
@@ -85,29 +110,36 @@
     width: 1100px;
     position: absolute;
     top: 45px;
-    background: skyblue;
-
+    // background: skyblue;
+    
     #nav_content{
         width: 160px;
-        background:skyblue;
-        padding-top: 15px;
+        background:#FFF;
         // display: none;
+        border: 1px solid #BBBBBB;
+        border-radius: 5px;
         #nav_shadow{
             height: 0;
             width: 0;
             border: 9px solid transparent;
-            border-bottom-color: black;
+            border-bottom-color: #BBBBBB;
             position: absolute;
             left: 115px;
-            top: 30px;
+            top: 33px;
         }
 
         li{
             height:22px;
+            margin-left: 15px;
+            a{
+                margin: 0;
+            }
+            @extend #a_style1;
         }
         p{
             height: 30px;
             line-height: 30px;
+            @extend #a_style1;
         }
     }
 
@@ -125,6 +157,7 @@
             #line_2{
                 position: absolute;
                 top: 30px;
+                font-weight: 600;
                 
             }
         }
@@ -149,7 +182,7 @@
     position: absolute;
     top: 50px;
     right: 0;
-    background: cyan;
+   
     display: flex;
 
     .tools_box{
@@ -180,36 +213,42 @@
         position: absolute;
         top:20px;
         left: 20px;
+        font-weight: 600;
      }
      #tools_line4{
         position: absolute;
         top:20px;
         left: 120px;
+        font-weight: 600;
      }
      #tools_line5{
         position: absolute;
         top:20px;
         left: 220px;
+        font-weight: 600;
      }
      #tools_line6{
         position: absolute;
         top:20px;
         left: 320px;
+        font-weight: 600;
      }
 
      #tools_message{
          
          width: 200px;
-         background: pink;
+         background: #fff;
          position: absolute;
          left: 0;
          top: 50px;
+         border: 1px solid #BBBBBB;
+         border-radius: 3px;
          display: none;
          #tools_message_triangle{
              height: 0;
              width: 0;
              border: 9px solid transparent;
-             border-bottom-color: black;
+             border-bottom-color: #BBBBBB;
              position: absolute;
              top: -18px;
              left: 88px;
@@ -217,12 +256,18 @@
          #tools_message_button{
              width: 180px;
              height: 40px;
-             margin-left: 10px;
+             margin:10px 10px 0;
+             border-color: #F0C14B;
+             border-radius: 3px;
+             outline: none;
+             background: -webkit-linear-gradient(top,#F8E1AB,#F3CF74,#F0C24E);
+
          }
          #tools_message_span{
              font-size: 12px;
              padding-left: 10px;
          }
+         @extend #a_style1;
      }
 
 }
@@ -242,13 +287,13 @@
 #bg_Tail{
     width: 100%;
     height: 400px;
-    background: skyblue;
+    // background: skyblue;
     margin: 0 auto;
     #Tail{
         width: 1500px;
         height: 400px;
         margin: 0 auto;
-        background: pink;
+        // background: pink;
         position: relative;
         overflow: hidden;
     }
@@ -268,7 +313,8 @@
     .Tail_img{
         width: 100%;
         height: 19px;
-        background: orange;
+        background: url(../../img/tail_logo.gif)no-repeat center top;
+        
     }
 
     .Tail_line1{
