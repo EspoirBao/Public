@@ -92,34 +92,63 @@
 }
 
 #bg_head #nav_shop {
-  height: 70px;
+  height: 50px;
   width: 1100px;
   position: absolute;
-  top: 50px;
+  top: 45px;
   background: skyblue;
 }
 
-#bg_head #nav_shop #line_1 {
-  position: absolute;
-  top: 20px;
-  font-size: 12px;
-  margin-left: 10px;
+#bg_head #nav_shop #nav_content {
+  width: 160px;
+  background: skyblue;
+  padding-top: 15px;
 }
 
-#bg_head #nav_shop #line_2 {
+#bg_head #nav_shop #nav_content #nav_shadow {
+  height: 0;
+  width: 0;
+  border: 9px solid transparent;
+  border-bottom-color: black;
   position: absolute;
-  top: 32px;
-  margin-left: 10px;
+  left: 115px;
+  top: 30px;
+}
+
+#bg_head #nav_shop #nav_content li {
+  height: 22px;
+}
+
+#bg_head #nav_shop #nav_content p {
+  height: 30px;
+  line-height: 30px;
+}
+
+#bg_head #nav_shop #nav_line_box {
+  height: 50px;
+  width: 100px;
+  margin-left: 15px;
+}
+
+#bg_head #nav_shop #nav_line_box #line_1 {
+  position: absolute;
+  top: 15px;
+  font-size: 12px;
+}
+
+#bg_head #nav_shop #nav_line_box #line_2 {
+  position: absolute;
+  top: 30px;
 }
 
 #bg_head #nav_shop #nav_a {
   position: absolute;
-  top: 32px;
+  top: 30px;
   left: 180px;
 }
 
 #bg_head #tools {
-  height: 70px;
+  height: 50px;
   width: 400px;
   position: absolute;
   top: 50px;
@@ -131,7 +160,7 @@
 }
 
 #bg_head #tools .tools_box {
-  height: 70px;
+  height: 50px;
   width: 95px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -177,7 +206,6 @@
 }
 
 #bg_head #tools #tools_message {
-  height: 300px;
   width: 200px;
   background: pink;
   position: absolute;

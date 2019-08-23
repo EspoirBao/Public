@@ -81,27 +81,58 @@
 }
 
 #nav_shop{
-    height: 70px;
+    height: 50px;
     width: 1100px;
     position: absolute;
-    top: 50px;
+    top: 45px;
     background: skyblue;
 
-        #line_1{
+    #nav_content{
+        width: 160px;
+        background:skyblue;
+        padding-top: 15px;
+        // display: none;
+        #nav_shadow{
+            height: 0;
+            width: 0;
+            border: 9px solid transparent;
+            border-bottom-color: black;
             position: absolute;
-            top: 20px;
-            font-size: 12px;
-            margin-left: 10px;
+            left: 115px;
+            top: 30px;
         }
-        #line_2{
-            position: absolute;
-            top: 32px;
-            margin-left: 10px;
+
+        li{
+            height:22px;
         }
+        p{
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+
+
+        #nav_line_box{
+            height: 50px;
+            width: 100px;
+            margin-left: 15px;
+            #line_1{
+                position: absolute;
+                top: 15px;
+                font-size: 12px;
+                
+            }
+            #line_2{
+                position: absolute;
+                top: 30px;
+                
+            }
+        }
+       
 
         #nav_a{
             position: absolute;
-            top: 32px;
+            top: 30px;
             left: 180px;
 
              
@@ -113,7 +144,7 @@
 }
 
 #tools{
-    height: 70px;
+    height: 50px;
     width: 400px;
     position: absolute;
     top: 50px;
@@ -122,7 +153,7 @@
     display: flex;
 
     .tools_box{
-        height: 70px;
+        height: 50px;
         width: 95px;
         flex: 1;
     }
@@ -167,7 +198,7 @@
      }
 
      #tools_message{
-         height: 300px;
+         
          width: 200px;
          background: pink;
          position: absolute;
