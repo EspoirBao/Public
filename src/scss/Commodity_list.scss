@@ -19,8 +19,6 @@
     }
     box-sizing: border-box;
 }
-
-
 #bg_head{
     height: 100px;
     width: 100%;
@@ -367,324 +365,174 @@
      }
 
 }
-}// 头部——————————————————————————————————————————-
+}
 
 
-// 内容--------------------------------------------
+
+
 #bg_content{
-    // height: 500px;
-    background: #fff;
     width: 100%;
-    margin: 0 auto;
-    position: relative;
-    #test1{
-    img{
-        width: 100%;
-    }}
+    height: 1300px;
+    background: cyan;
 
     #content{
-        width: 100%;
+       width: 1500px;
+    //    height: 800px;
+       margin: 0 auto;
+       background: orange;
+    //    position: relative;
+       overflow: hidden;
 
-        #content_right{
-            width: 310px;
-            float: right;
-            span{
-                float: right;
-                margin-right: 20px;
-            }
+       #content_left{
+           width: 200px;
+           height: 880px;
+           border: 1px solid black;
+           position: absolute;
+           padding-top: 10px;
+        //    overflow: hidden;
+        //    float: left;
+           padding-left: 20px;
 
-            #content_right_top{
-                width: 264px;
-             
-                margin: 20px auto ;
-                border-top: 1px solid #BBBBBB;
-                display: flex;
-                
-                flex-direction:column;
-                h3{
-                    text-align: center;
-                    padding-top: 15px;
-                    font-size: 16px;
-                    line-height: 24px;
-                }
-                div{
-                    display: flex;
-                    margin: 5px auto 5px;
-                    .rank{
-                        font-size: 40px;
-                        line-height: 75px;
-                        color: #C7C7C7;
-                    }
-                }
-            }
+           p{
+               font-size: 17px;
+               font-weight: 400;
+               margin: 20px 0;
+               color: #767676;
+           }
+           span{
+               font-weight: 700;
+               font-size: 12px;
+           }
+           li{
+               font-size: 12px;
+           }
+       }
 
-            #content_right_bottom{
-                border-top: 1px solid #E8E8E8;
-                border-bottom:1px solid #E8E8E8;
-                margin: 10px;
-                padding: 13px;
-            }
-           
-        }
+       
 
-        #content_left{
-            #content_left_1{
-                display: flex;
-                
-                div{
-                    flex: 1;
 
-                    span{
-                        font-weight: 700;
-                        font-size: 18px;
-                        margin-left: 15px;
-                        a{
-                            margin: 0;
-                            font-weight: 700;
-                            font-size: 18px;
-                        }
-                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       #contennt_right{
+        //  float: left;
+        //    background: red;
+
+           position: absolute;
+            left: 210px;
+           #contennt_right_ul{
+            //    width: 1300px;
+            
+            display: flex;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+           .contennt_right_li{
+            
+                    margin: 5px;
+                   height: 400px;
+                  width: 250px;
+                   background: #fff;
+                   border: 1px solid blue;
+                   .right_li_img{
+                       height: 260px;
+                       width: 200px;
+                       margin: 0 auto;
+                       cursor: pointer;
+                   }
+                   .right_li_line1{
+                       color: #007ED2;
+                       font-weight: 500;
+                       width: 200px;
+                       display: block;
+                       margin: 0 auto;
+                       cursor: pointer;
+                   }
+                   .right_li_line1:hover{
+                    color: #C45500;
+                   }
+                   .right_li_line2{
+                       display: block;
+                       width: 200px;
+                       margin: 0 auto;
+                       text-align: left;
+                       font-size: 14px;
+                       font-weight: 700;
+                        color: #B12704;
+                        cursor: pointer;
+                       
+                   }
+                   .right_li_line3{
+                       position: relative;
+                       width: 200px;
+                       height: 18px;
+                       margin: 0 auto;
+                       cursor: pointer;
+                   .li_line3_prime{
+                    position: absolute;
+                    top: 3px;
+                    height: 15px;
+                    width: 53px;
+                    background: url(../../img/Amazon@sprite_V2.png)no-repeat;
+                    background-position-x: -85px;
+                    background-position-y: -4px;
                     
-                    #left_2_div{
-                        display: flex;
-                        #2_div_left{
-                            flex: 1
-                            
-                           
-                        }
-                    }
-
-                    #div_span_1{
-                        font-size: 13px;
-                        color: #B82704;
-
-                    }
-
-                    #div_span_2{
-                        font-size: 13px;
-                        color: #B82704;
-                        a{
-                            font-size: 20px;
-                            a:link{		/*默认状态*/
-                                color: #B82704;text-decoration:none;
-                            }
-                        }
-                    }
-                }
-            }
-
-            #content_left_2{
-                display: flex;
-                flex-direction:column;
-                justify-content: space-between;
-                margin:10px 320px 10px 10px;
-                #left_2_top{
-                    span{
-                        font-size: 18px;
-                        font-weight: 600;
-                        margin-left: 30px;
-                    }
-                }
-
-                #left_2_bottom{
-                    display: flex;
+                   }
+                   .right_li_line3{
+                    position: absolute;
+                        left: 55px;
+                       font-size: 12px;
+                       width: 200px;
+                       margin: 0 auto;
+                       text-align: left;
+                       
+                   }}
+                   .right_li_line4{
+                    margin-left: 25px;
                     
-                    div{
-                        flex: 1;
-                        height: 200px;
-                        width: 290px;
-                        text-align: center;
-                        border: 1px solid #bbb;
-                        img{
-                            height: 190px;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-                #left_2_content{
-                    display: flex;
-                    div{
-                        flex: 1; 
-                        height: 100px;
-                        width: 290px;
-                        text-align: center;
-                        display: flex;
-                        flex-direction:column;
-                        font-size: 18px;
-                        span{
-                           flex: 1
-                        
-                        }
-                        span:nth-child(2){
-                            font-size: 14px;
-                            color: #B82704;
-                        }
-                        span:nth-child(3){
-                            font-size: 14px;    
-                        }
-                        
-                    }
-
-                }
-                
-            }
-
-            .content_left_3{
-               
-                display: flex;
-                flex-direction:column;
-                margin: 50px 320px 30px 10px;
-                .left_3_span{
-                    float: left;
-                    font-size: 27px;
-                    font-weight: 600;
-                    margin-left: 30px;
-                }
-               
-                .left_3_top{
-                    display: flex;
-                    .top_img{
-                        flex: 1;
-                        text-align: center;
-                        border: 1px solid #bbb;
-                        position: relative;
-                        overflow: hidden;
-                        img{
-                            height: 250px;
-                        }
-                        .top_img_shadow{
-                            position: absolute;
-                            height: 30px;
-                            width: 190px;
-                            background: #fff;  
-                            bottom: 20px;
-                            left: 23px;
-                            display: none;
-                            border: 1px solid black;
-                            border-radius: 3px;
-                            span{
-                                line-height:30px; 
-                            }
-                        }   
-                        
-                    }
-                }
-
-                .left_3_bottom{
-                    display: flex;
-                    text-align: center;
-                    position: relative;
                     
-                    div{
-                        border: 1px solid #bbb;
-                        background: #cecece3b;
-                        flex: 1;
-                        font-size: 16px;
-                        padding-bottom: 10px;
-                            .bottom_sprite_V2{
-                                float: right;
-                                margin:5px 60px 5px 25px;
-                                height: 15px;
-                                width: 53px;
-                                background: url(../../img/Amazon@sprite_V2.png)no-repeat;
-                                background-position-x: -85px;
-                                background-position-y: -4px;
+                   }
 
-                            }
-                        
-
-
-                        
-                    }
-
-                }
-            }
-
-
-            .content_left_4{
-                display: flex;
-                width: 1143px;
-                height: 602px;
-                flex-wrap: wrap;
-                margin: 0 auto;
-                
-
-               
-                div:nth-child(1){
-                    width: 456px;
-                    height: 200px;
-
-                    .content_4_img{
-                        margin:50px 75px;
-                        overflow: hidden;
-                        height: 100px;
-                        width: 302px;
-
-
-                        .content_4_left{
-                            height: 100px;
-                            width: 200px;
-                            background: url(../../img/DREMEL.png)no-repeat center top;
-                            background-size: 200px;
-                            background-position: center center;
-                            float: left;
-                        }
-                        .content_4_right{
-                            height: 100px;
-                            width: 100px;
-                            background: url(../../img/DREMEL_1.jpg)no-repeat center top;
-                            background-size: 100px;
-                            float: right;
-                        }
-                    }
-
-                    
-
-                }
-                div{
-                    
-                    width: 228px;
-                    height: 200px;
-                    background: #F7F7F7;
-                    border: 1px solid #fff;
-                    flex-wrap: wrap;
-                    text-align: center;
-                    .content_img {
-                        background: url(../../img/Sony.png)no-repeat;
-                        background-position: 40px 85px;
-                        background-size: 150px;
-                    }
-                    
-                }
-
-
-
-
-
-
-            }
-
-        }
-
-
-
-
-
-
-
+               }
+           }
+       }
+       
     }
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // 尾部----------------------------------------------
@@ -695,7 +543,7 @@
     // background: skyblue;
     margin: 0 auto;
     #Tail{
-        // width: 1300px;
+        width: 1500px;
         height: 400px;
         margin: 0 auto;
         // background: pink;
@@ -784,22 +632,3 @@
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

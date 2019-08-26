@@ -38,6 +38,13 @@ $(document).on('mouseover','#nav_subcats',function(){
         $('#nav_subcats').hide();
     })
 })
+$(document).on('mouseover','.top_img',function(){
+    
+    $(this).children('.top_img_shadow').show()
+    $(document).on('mouseleave','.top_img',function(){
+        $(this).children('.top_img_shadow').hide()
+    })
+})
 // 鼠标移入功能——————————————————————————————————————————————————————————————
 
 
