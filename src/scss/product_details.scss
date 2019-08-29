@@ -382,14 +382,42 @@
             margin: 0 auto;
             position: relative;
 
-
+            #content_right_shadow{
+                height: 600px;
+                width: 600px;
+                background: #fff;
+                border: 1px solid #bbb;
+                position: absolute;
+                left: 600px;
+                top: 0;
+                z-index: 20;
+                overflow: hidden;
+                display: none;
+                img{
+                    height: 1220px;
+                    position: absolute;
+                }
+            }
             #content_left{
                 height: 610px;
                 width: 600px;
-                background: red;
+                // background: red;
                 position: absolute;
+                text-align: center;
                 img{
-                    height: 610px;
+                    height:100%;
+                    height: 100%;
+                    
+                }
+                #content_left_shadow{
+                    width: 300px;
+                    height: 300px;
+                    opacity: 0.5;
+                    background: #767676;
+                    position: absolute;
+                    top: 0;
+                    display: none;
+                    
                 }
             }
             #content_right{
@@ -402,6 +430,8 @@
                 display: flex;
                 
                 #detail{
+                    height: 450px;
+                    width: 450px;
                     li{
                         list-style:disc;
                     }

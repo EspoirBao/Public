@@ -10,7 +10,7 @@ $(document).on('click', '#login_button', function () {
 
     $.ajax({
         type: 'GET',
-        url: 'http://localhost/Amazon/login.php',
+        url: `//${location.hostname}/Amazon/login.php`,
         data: {
             username,
             password,

@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    a {
+        font-size: 12px;
+    }
+    
+    a:link{		/*默认状态*/
+        color: #0055AA;text-decoration:none;
+    }
+    a:visited{	/*浏览过的*/
+        color:#0055AA;
+    }
+    a:hover{	/*悬浮状态*/
+        color:orange;
+        text-decoration: underline;
+    }
+    box-sizing: border-box;
+}
+
+#bg_head{
+    height: 80px;
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    #head{
+        line-height: 80px;
+    }
+}
+
+#bg_content{
+    height: 800px;
+    width: 1200px;
+    background: #fff;
+    margin: 0 auto;
+    #content{
+        #line_1{
+            
+            font-size: 25px;
+            font-weight: 500;
+        }
+        #line_2{
+            margin-top: 20px;
+            font-size: 13px;
+            line-height: 19px;
+            
+        }
+        #line_3{
+            margin-top: 20px;
+            font-size: 13px;
+            line-height: 19px;
+        }
+        hr{
+            margin-top: 15px;
+        }
+        #detail{
+            display: flex;
+
+            #detail_left{
+                flex: 1;
+                padding: 20px;
+                input{
+                    width: 450px;
+                    height: 20px;
+                    border: 1px solid #bbb;
+                    border-radius: 3px;
+
+                }
+                .detail_left_1{
+                    font-size: 21px;
+                    font-weight: 600;
+                    padding-top: 20px;
+                }
+                .detail_left_2{
+                font-size: 13px;
+                line-height: 19px;
+                }
+                .detail_left_3{
+                    font-size: 13px;
+                    font-weight: 700;
+                    margin-top: 20px;
+                }
+                .checkbox{
+                    width: 15px;
+                    height: 15px;
+                }
+                #button{
+                    width: 65px;
+                    height: 40px;
+                 
+                    border-radius: 3px;
+                    outline: none;
+                    border:  2px solid #F0C14B;
+                    margin-left: 400px;
+                    background: -webkit-linear-gradient(top,#F9F9F9,#F4D17C,#F0C14C);
+                }
+
+
+
+
+
+            }
+            #detail_right{
+                flex: 1;
+                .detail_right_box{
+                    margin-top: 20px;
+                    height:300px;
+                    width: 450px;
+                    border: 1px solid #bbb;
+                    border-radius: 5px;
+                    padding: 15px;
+                    span{
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+                    div{
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-top: 15px;
+                    }
+                    p{
+                        font-size: 16px;
+                        
+                    }
+                    .derail_p{
+                        margin-top: 15px;
+                    }
+                    .modify{
+                        height: 30px;
+                        width: 40px;
+                        border:  2px solid #F0C14B;
+                        background: -webkit-linear-gradient(top,#F9F9F9,#F4D17C,#F0C14C);
+                        outline: none;
+                    }
+                    .delete{
+                        height: 30px;
+                        width: 40px;
+                        border:  2px solid #F0C14B;
+                        background: -webkit-linear-gradient(top,#F9F9F9,#F4D17C,#F0C14C);
+                        outline: none;
+                    }
+                    .payment{
+                        float: right;
+                        height: 35px;
+                        width: 75px;
+                        border:  2px solid #F0C14B;
+                        background: -webkit-linear-gradient(top,#F9F9F9,#F4D17C,#F0C14C);
+                        outline: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+#bg_bottom{
+    height: 50px;
+    width: 100%;
+  
+  
+    #bottom{
+        height: 50px;
+        width: 1500px;
+        margin: 0 auto;
+        text-align: center;
+        p{
+            font-size: 13px;
+        }
+        span{
+            font-size: 13px;
+            line-height: 13px;
+            .first_a{
+                border-right: 1px solid #bbb;
+                margin-right: 5px;
+                padding-right: 5px;
+            }
+        }
+
+    }
+}

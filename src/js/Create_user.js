@@ -18,7 +18,7 @@ $(document).on('click', '#createAccount', function () {
             if (tag_check) {
                 $.ajax({
                     type: 'GET',
-                    url: 'http://localhost/Amazon/Create_user.php',
+                    url: `//${location.hostname}/Amazon/Create_user.php`,
                     data: {
                         username,
                         password,
@@ -42,7 +42,7 @@ $(document).on('click', '#createAccount', function () {
             layer.msg('请输入正确的手机号码');
         }
     } else {
-        layer.msg('请输入正确的密码');
+        layer.msg('请输入正确的密码,且2次密码一致');
     }
 
 

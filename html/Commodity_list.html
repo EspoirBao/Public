@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>商品列表</title>
     <link rel="stylesheet" href="../src/scss/Commodity_list.css">
+    <link rel="stylesheet" href="../src/layui/css/layui.css">
 </head>
 <body>
     
@@ -116,7 +117,7 @@
                             <div id="subcats_bottom_div">Kindle帮助</div>
                             <span><a href="">常见问题</a><a href="">帮助视频</a></span>
                         </div>
-                        <img src="./img/content_new.png" alt="">
+                        <img src="../img/content_new.png" alt="">
                     </div>
                 </div>
 
@@ -150,7 +151,7 @@
                     <div id="tools_message_triangle"></div>
                     <div id="no_login">
                         <button id="tools_message_button">立即登录</button>
-                        <span id="tools_message_span">新用户？<a href="./html/Create_user.html">立即注册</a></span>
+                        <span id="tools_message_span">新用户？<a href="./Create_user.html">立即注册</a></span>
                         <hr>
                     </div>
                     <ul>
@@ -169,7 +170,7 @@
                     </ul>
                     <div id="tools_text">
                         <hr>
-                        <span><a href="./html/login.html" class="Exit_account">切换账户</a></span>
+                        <span><a href="./login.html" class="Exit_account">切换账户</a></span>
                         <span><a href="" class="Exit_account">退出</a></span>
                     </div>
                 </div>
@@ -186,34 +187,26 @@
 
     <div id="bg_content">
         <div id="content">
+            <div id="content_top">
+                <div id="content_top_box">
+                        <span>价格排序：</span>
+                        <button id="asc">升序</button>
+                        <button id="desc">降序</button>
+                </div>
+               
+            </div>
             <div id="content_left">
                 <p>显示搜索结果：</p>
-                <span> 服饰箱包</span>
+                <span> 服饰箱包</span> 
 
                 <ul>
                     <li>男装</li>
-                    <li>T恤、Polo衫、背心</li>
-                    <li>衬衫</li>
-                    <li>夹克</li>
-                    <li>长裤</li>
-                    <li>短裤</li>
-                    <li>牛仔裤</li>
-                    <li>卫衣</li>
-                    <li>风衣</li>
-                    <li>西服</li>
-                    <li>牛仔服</li>
-                    <li>羽绒服</li>
-                    <li>棉背心、羽绒背心</li>
-                    <li>皮衣</li>
-                    <li>毛呢大衣</li>
-                    <li>毛衣、针织衫</li>
-                    <li>棉衣</li>
-                    <li>单马甲</li>
-                    <li>运动休闲服</li>
-                    <li>内衣</li>
-                    <li>袜子</li>
-                    <li>睡衣、家居服</li>
-                    <li>配件</li>
+                    <li id="T-shirt">T恤、Polo衫、背心</li>
+                    <li id="shirt">衬衫</li>
+                    <li id="jacket">夹克</li>
+                    <li id="trousers">长裤</li>
+                    <li id="shorts">短裤</li>
+                    
                 </ul>
 
                 <p>筛选：</p>
@@ -303,7 +296,7 @@
 
             <div id="contennt_right">
                 <ul id="contennt_right_ul">
-                    <li class="contennt_right_li">
+                    <!-- <li class="contennt_right_li">
                         <div class="right_li_img"><img src="../img/Commodity_list/01.jpg" alt=""></div>
                         <span class="right_li_line1">Champion 明星同款纯色圆领短袖T恤 男女同款</span>
                         <span class="right_li_line2">￥71.38 - ￥92.72 </span>
@@ -312,59 +305,11 @@
                                 <div class="right_li_line3">海外购满200元免运费 </div>
                         </div>
                         <img  class="right_li_line4" src="../img/ags_badge.png" alt="">
-                    </li>
-                    <li class="contennt_right_li">
-                            <div class="right_li_img"><img src="../img/Commodity_list/01.jpg" alt=""></div>
-                            <span class="right_li_line1">Champion 明星同款纯色圆领短袖T恤 男女同款</span>
-                            <span class="right_li_line2">￥71.38 - ￥92.72 </span>
-                            <div class="right_li_line3">
-                                    <div class="li_line3_prime"></div>
-                                    <div class="right_li_line3">海外购满200元免运费 </div>
-                            </div>
-                            <img  class="right_li_line4" src="../img/ags_badge.png" alt="">
-                        </li>
-                        <li class="contennt_right_li">
-                                <div class="right_li_img"><img src="../img/Commodity_list/01.jpg" alt=""></div>
-                                <span class="right_li_line1">Champion 明星同款纯色圆领短袖T恤 男女同款</span>
-                                <span class="right_li_line2">￥71.38 - ￥92.72 </span>
-                                <div class="right_li_line3">
-                                        <div class="li_line3_prime"></div>
-                                        <div class="right_li_line3">海外购满200元免运费 </div>
-                                </div>
-                                <img  class="right_li_line4" src="../img/ags_badge.png" alt="">
-                            </li>
-                            <li class="contennt_right_li">
-                                    <div class="right_li_img"><img src="../img/Commodity_list/01.jpg" alt=""></div>
-                                    <span class="right_li_line1">Champion 明星同款纯色圆领短袖T恤 男女同款</span>
-                                    <span class="right_li_line2">￥71.38 - ￥92.72 </span>
-                                    <div class="right_li_line3">
-                                            <div class="li_line3_prime"></div>
-                                            <div class="right_li_line3">海外购满200元免运费 </div>
-                                    </div>
-                                    <img  class="right_li_line4" src="../img/ags_badge.png" alt="">
-                                </li>
-                                <li class="contennt_right_li">
-                                        <div class="right_li_img"><img src="../img/Commodity_list/01.jpg" alt=""></div>
-                                        <span class="right_li_line1">Champion 明星同款纯色圆领短袖T恤 男女同款</span>
-                                        <span class="right_li_line2">￥71.38 - ￥92.72 </span>
-                                        <div class="right_li_line3">
-                                                <div class="li_line3_prime"></div>
-                                                <div class="right_li_line3">海外购满200元免运费 </div>
-                                        </div>
-                                        <img  class="right_li_line4" src="../img/ags_badge.png" alt="">
-                                    </li>
-                                    <li class="contennt_right_li">
-                                            <div class="right_li_img"><img src="../img/Commodity_list/01.jpg" alt=""></div>
-                                            <span class="right_li_line1">Champion 明星同款纯色圆领短袖T恤 男女同款</span>
-                                            <span class="right_li_line2">￥71.38 - ￥92.72 </span>
-                                            <div class="right_li_line3">
-                                                    <div class="li_line3_prime"></div>
-                                                    <div class="right_li_line3">海外购满200元免运费 </div>
-                                            </div>
-                                            <img  class="right_li_line4" src="../img/ags_badge.png" alt="">
-                                        </li>
+                    </li> -->
+                    
                     
                 </ul>
+                <div id="Multiple_columns"></div>
             </div>
         </div>
     </div>
@@ -487,5 +432,8 @@
         </div>
 </body>
 <script src="../src/js/JQ/jquery-1.11.3.js"></script>
+
+
+<script src="../src/layui/layui.all.js"></script>
 <script src="../src/js/Commodity_list.js"></script>
 </html>

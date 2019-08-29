@@ -4,11 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>选择地址</title>
     <link rel="stylesheet" href="../src/scss/address_select.css">
+    <link rel="stylesheet" href="../src/layui/css/layui.css">
 </head>
 <body>
-    
+    <div id="boss">
+        <div id="bg_head">
+            <div id="head">
+                <img src="../img/address_select.gif" alt="">
+            </div>
+        </div>
+        <div id="bg_content">
+            <div id="content">
+                <span id="line_1">请选择配送地址</span>
+                <p id="line_2"> 也请确认您的账单寄送地址是否与输入的. 配送地址一致完成后，请点击"继续"按钮。  如果您需要将商品发送至多个地址，请点击"增加其它地址"按钮。</p>
+                <p id="line_3">选择自提服务，可享免运费优惠。提示：便利店暂不提供门店开箱验货服务。查看<a href="">详细信息</a>; 点击 <a href="">查找自提点</a>。</p>
+               <hr>
+                <div id="detail">
+                    <div id="detail_left">
+                        <span class="detail_left_1">请输入配送地址</span>
+                        <p class="detail_left_2">完成后，请点击"继续"按钮。</p>
+                        <p class="detail_left_3">姓名</p>
+                        <input type="text" id="name">
+                        <p class="detail_left_3">联系电话</p>
+                        <input type="text" id="telephone">
+                        <p class="detail_left_3">地区</p>
+                        <select id='prov' name='prov' onchange='showCity(this)'>
+                                <option>请选择省份</option>
+                               <IMG src="file:///C:\Users\15843\AppData\Roaming\feiq\RichOle\3259308091.bmp"><select>
+                               <!-- 城市选择 -->
+                               <select id='city' onchange='showCountry(this)'>
+                                <option>请选择城市</option>
+                               <IMG src="file:///C:\Users\15843\AppData\Roaming\feiq\RichOle\834828390.bmp"><select>
+                               <!-- 区县选择 -->
+                               <select id='country' onchange='selectCountry(this)'>
+                                <option>请选择县区</option>
+                               <IMG src="file:///C:\Users\15843\AppData\Roaming\feiq\RichOle\1470660176.bmp"><select>
+
+                        <p class="detail_left_3">街道地址</p>
+                        <input type="text" id="address">
+                        <p>其他地址信息(<a href="">这是什么？</a>)</p>
+                        <span  class="detail_left_2">配送地址可选项信息用于帮助我们更好的安排您的配送时间，但实际配送时间根据具体情况可能早于或晚于计划时间。</span>
+                        <p class="detail_left_3">双休日是否配送:</p>
+                        <select name="" id="">
+                            <option value="">请选择配送时间</option>
+                            <option value="">工作日和双休均可配送</option>
+                            <option value="">仅工作日配送</option>
+                        </select>
+                        <p class="detail_left_3">商品发送至多个地址？</p>
+                        <input type="checkbox" class="checkbox">添加另一个地址
+                        <p><button id="button">添加</button></p>
+                    </div>
+                    <div id="detail_right">
+                        <!-- <div class="detail_right_box">
+                            <span>已存地址</span>
+                            <div>详细地址</div>
+                            <p>123123456465</p>
+                            <div>联系人姓名</div>
+                            <p>xkx</p>
+                            <div>联系电话</div>
+                            <p>12313213213</p>
+                            <p class="derail_p">
+                                <button class="modify">修改</button>
+                                <button class="delete">删除</button>
+                                
+                            </p>
+                            <button class="payment">付款</button>
+                        </div> -->
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="bg_bottom">
+            <div id="bottom">
+                <p>您有礼品卡/促销优惠码吗?如果有，付款时请输入您的礼品卡充值码或促销优惠码。</p>
+                <span><a href="" class="first_a">使用条件</a><a href="">隐私声明 </a>© 1999 - 2019 Amazon.com, Inc. or its affiliates</span>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="../src/js/JQ/jquery-1.11.3.js"></script>
+
+<script src="../src/js/city/addinfo.js"></script>
+<script src="../src/js/city/address.js"></script>
+
+<script src="../src/layui/layui.all.js"></script>
+<script src="../src/js/cookie.js"></script>
 <script src="../src/js/address_select.js"></script>
 </html>
